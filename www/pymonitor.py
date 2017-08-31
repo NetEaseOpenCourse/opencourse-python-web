@@ -61,8 +61,8 @@ if __name__ == '__main__':
     if not argv:
         print('Usage: ./pymonitor your-script.py')
         exit(0)
-    if argv[0]!='python':
-        argv.insert(0, 'python')
+    if argv[0]!='python2.7':
+        argv.insert(0, 'python2.7')
     command = argv
     path = os.path.abspath('.')
     start_watch(path, None)
